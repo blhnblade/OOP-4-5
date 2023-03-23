@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        padding: 30px;
+    }
+    .hidden{
+        display: none;
+    }
+    li{
+        padding: 5px;
+        cursor: pointer;
+
+    }
+</style>
+<body style="display: flex; flex-direction: column; row-gap: 40px;">
+    <div class="first-section">
+        <h2>Калькулятор деления</h2>
+        <div class="input" style="display: flex; align-items: center;">
+            <input type="number" name="calc" id="first"><p style="margin: 0 10px;">/</p><input type="number" id="second"><p id="res"> =</p>
+        </div>
+    </div>
+    <div class="second-section">
+        <h2>Приветствие по имени</h2>
+        <input type="text" class="user-name-input">
+        <p class="user-name">Здравствуйте,</p>
+    </div>
+
+    <div class="third-section">
+        <h2>Выбор из списка</h2>
+        <div class="list" style="max-width: 280px;">
+            <div class="select" style="display: flex; justify-content: space-between; align-items: center; cursor: pointer; background-color:darkkhaki; ">
+                <h4 class="select-heading" style="padding-left: 12px">Selection</h4>
+                <button class="select-btn" style="border: none; background: none;  display: flex; justify-content: center; align-items: center; cursor: pointer;">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 6L8 10L12 6" stroke="#9999AB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+            <ul class="list-ul hidden" style="list-style: none; padding: 20px; background-color: teal;">
+                <li>Германии</li>
+                <li>Португалии</li>
+                <li>Дагестане</li>
+                <li>Грозном</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
