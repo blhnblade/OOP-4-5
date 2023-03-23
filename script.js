@@ -55,7 +55,7 @@ btn.addEventListener('click', function(){
 
 for(let i = 0; i < items.length; i++){
     items[i].addEventListener('click',function(){
-        const temp = items[i].textContent;
+        const temp = items[i].dataset.name;
         heading.textContent = `Эта информация о ${temp}`;
         container.classList.toggle('hidden');
     })
